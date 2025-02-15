@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynsee-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pynsee-{{ version }}.tar.gz
   sha256: fa46d8790cc331d55f8083bb2f241ae38ad1acca1d5b98f3af88d22b27eca171
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install .[full] -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pandas >=0.24.2
     - tqdm >=4.56.0
     - requests >=2.23
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pynsee.readthedocs.io/en/latest/
