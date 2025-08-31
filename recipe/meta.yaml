@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pynsee-{{ version }}.tar.gz
-  sha256: a7c891c63071f75d4237067133364d5fa8dfc47e36a0da10702a578b977d9e53
+  sha256: 6f320b7c48c1f5745c5b654d0a5c2912aced38d11e1e14af9df8e73e8b186ef4
 
 build:
   noarch: python
