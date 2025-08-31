@@ -1,5 +1,5 @@
 {% set name = "pynsee" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -30,6 +30,7 @@ requirements:
     - shapely >=2
     - requests >=2.32
     - requests-ratelimiter >=0.7
+    - openpyxl
 
 test:
   imports:
