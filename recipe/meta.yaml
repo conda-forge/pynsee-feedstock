@@ -1,13 +1,13 @@
 {% set name = "pynsee" %}
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pynsee-{{ version }}.tar.gz
-  sha256: 6f320b7c48c1f5745c5b654d0a5c2912aced38d11e1e14af9df8e73e8b186ef4
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pynsee-{{ version }}.tar.gz
+  sha256: 8389b0c587478ed97c2f8444fe965e8827b0e8fdfcb55d784d8408491bbc7163
 
 build:
   noarch: python
